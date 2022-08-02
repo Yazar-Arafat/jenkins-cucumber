@@ -1,44 +1,16 @@
-pipeline{
-
-    agent any
-
+pipeline {
+    agent { docker { image 'maven:3.8.4-openjdk-11-slim' } }
     stages {
-
-        stage ('Compile Stage') {
-
+        stage('build') {
             steps {
-
-                withMaven(maven: 'maven_3_8_6') {
-                    sh 'mvn clean install'
-
-                }
-
+                sh 'mvn --version'
             }
         }
-    stage ('Test Stage') {
-
-            steps {
-
-                withMaven(maven: 'maven_3_8_6') {
-                    sh 'mvn test'
-
-                }
-
-            }
-        }
-
-
         stage ('Cucumber Reports') {
-
             steps {
                 cucumber buildStatus: "UNSTABLE",
                     fileIncludePattern: "**/cucumber.json",
                     jsonReportDirectory: 'target'
-
             }
-
         }
-
-    }
-
 }
