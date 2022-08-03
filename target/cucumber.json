@@ -1,0 +1,186 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Play FizzBuzz to get Fizz",
+        "description": "",
+        "id": "fizzbuzz-game-play;play-fizzbuzz-to-get-fizz",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 594418200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Create a FizzBuzz game play",
+            "match": {
+              "location": "FizzBuzzStepdefs.createAFizzBuzzGamePlay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3949600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I play with number 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 19
+                }
+              ],
+              "location": "FizzBuzzStepdefs.iPlayWithNumber(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2448900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The result is \"Fizz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fizz",
+                  "offset": 15
+                }
+              ],
+              "location": "FizzBuzzStepdefs.theResultIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Play FizzBuzz to get Buzz",
+        "description": "",
+        "id": "fizzbuzz-game-play;play-fizzbuzz-to-get-buzz",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 71300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Create a FizzBuzz game play",
+            "match": {
+              "location": "FizzBuzzStepdefs.createAFizzBuzzGamePlay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 176700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I play with number 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 19
+                }
+              ],
+              "location": "FizzBuzzStepdefs.iPlayWithNumber(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The result is \"Buzz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buzz",
+                  "offset": 15
+                }
+              ],
+              "location": "FizzBuzzStepdefs.theResultIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Play FizzBuzz to get FizzBuzz",
+        "description": "",
+        "id": "fizzbuzz-game-play;play-fizzbuzz-to-get-fizzbuzz",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Create a FizzBuzz game play",
+            "match": {
+              "location": "FizzBuzzStepdefs.createAFizzBuzzGamePlay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 203300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I play with number 15",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 19
+                }
+              ],
+              "location": "FizzBuzzStepdefs.iPlayWithNumber(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The result is \"FizzBuzz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FizzBuzz",
+                  "offset": 15
+                }
+              ],
+              "location": "FizzBuzzStepdefs.theResultIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "FizzBuzz Game play",
+    "description": "",
+    "id": "fizzbuzz-game-play",
+    "keyword": "Feature",
+    "uri": "FizzBuzz.feature"
+  }
+]
