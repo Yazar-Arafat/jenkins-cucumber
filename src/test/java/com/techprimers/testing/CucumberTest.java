@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources",
         glue = "com.techprimers.testing",
-        format = {"json:target/cucumber.json"}
+        format = {"json:target/cucumber-reports/cucumber.json"}
 )
 public class CucumberTest {
 }
