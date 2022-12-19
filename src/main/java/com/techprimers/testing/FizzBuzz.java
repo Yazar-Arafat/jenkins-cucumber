@@ -10,7 +10,7 @@ public class FizzBuzz {
         if (isMultipleOf(number, 3)) return "Fizz";
         if (isMultipleOf(number, 5)) return "Buzz";
 
-
+        System.out.println("test");
         return String.valueOf(number);
     }
 
